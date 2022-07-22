@@ -1,0 +1,29 @@
+* {
+  box-sizing:border-box;
+}
+
+
+body {
+  font-family: sans-serif;
+	width: 1000px;
+	padding-top: 150px;
+	margin: 0 auto;
+	background: #e6e6e6;
+	
+
+	text-align: center;
+}
+
+h2{	font-size: 100px;
+color: #ffffff}
+
+section {
+  overflow:hidden;
+  
+}
+
+.pdfviewer {
+	
+	text-align: center;
+}
+
