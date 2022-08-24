@@ -2,28 +2,145 @@
   box-sizing:border-box;
 }
 
-
 body {
-  font-family: sans-serif;
-	width: 1000px;
-	padding-top: 150px;
+  	font-family: sans-serif;
 	margin: 0 auto;
-	background: #e6e6e6;
-	
+	background: #383838;
+	margin: 15px;
 
-	text-align: center;
 }
 
-h2{	font-size: 100px;
-color: #ffffff}
+p {
+	color: #ffffff
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  gap: 10px;
+  grid-auto-rows: minmax(700px, auto);
+  text-align: center;
+}
+
+
+#intropage {
+	grid-column: 1 / 6;
+	grid-row: 1;
+}
+
+h1{	font-size: 120px;
+color: #ffffff;
+font-family: 'Secular One';
+letter-spacing: 8px;
+margin-top: 10%;
+}
+
+.nametxt{
+	grid-column: 3 / span 1;
+  	grid-row: 1;
+	align-items: center;
+	justify-items: center;
+}
+
+.introdesc{
+	font-family: 'Cormorant Infant';
+	letter-spacing: 1px;
+}
+
+#folio{  
+  	grid-column: 1/6;
+	grid-row: 2;
+}
+
+h2{	font-size: 60px;
+color: #ffffff;
+	font-family: 'Noto Sans Devanagari';
+}
+
+h3 {font-size: 30px;
+	color: #ffffff;
+}
+
+p{
+	font-family: 'Cormorant Infant';
+}
+
+.webtitle{
+	font-size: 20px;
+	font-family: 'Cormorant Infant';
+}
+
+.webtitle:hover{
+  text-shadow:0px 0px 5px #ffffff;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
 
 section {
   overflow:hidden;
-  
+  height: 720px;
+
+}
+
+#instalogo {
+	height: 60px;
+	width:auto;
+	align-items: center;
+	justify-items: center;
 }
 
 .pdfviewer {
-	
-	text-align: center;
+	text-align: start;
+	grid-column: 3;
+
 }
 
+.sidenav{
+	grid-column: 1;
+	position: fixed;
+	text-align: left;
+	line-height:25px;
+	font-family: 'Cormorant Infant';
+
+}
+
+.sidenav, a:link, a:visited {
+    text-decoration: none;
+	color: #fdfdfd
+}
+
+#hidnavtxt1, #hidnavtxt2, #hidnavtxt3{
+	visibility:hidden;
+}
+
+#foliotxt:hover, #animationstxt:hover, #websitetxt:hover{
+	opacity: 50%;
+}
+
+#foliotxt:hover ~ #hidnavtxt1, #websitetxt:hover ~ #hidnavtxt2, #animationstxt:hover ~ #hidnavtxt3  {
+	visibility: visible;
+}
+
+
+
+
+.websites{ 
+	grid-column: 1 / 6;
+	grid-row: 4;
+}
+
+#web{	grid-column: 1 / 6;
+	grid-row: 3;}
+
+#animations{ 
+	grid-column: 1 / 6;
+	grid-row: 4;
+}
+
+.web1 {
+	grid-column: 2 / 3;
+	grid-row: 4;
+}
