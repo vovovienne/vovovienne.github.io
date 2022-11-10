@@ -232,6 +232,7 @@ section {
     position: relative;
     left: 15%;
     top: 40%;
+    z-index: -1;
 }
 
 .reeltxt{ margin: 0;
@@ -241,6 +242,11 @@ section {
     position: relative;
     right: 16%;
     top: 30%;
+    z-index: -1;
+}
+
+#showreelvid {
+	 z-index: 1;
 }
 
 .sidenav, a:link, a:visited {
