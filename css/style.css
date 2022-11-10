@@ -154,13 +154,26 @@ p{
 }
 
 .webtitle, .webtitle2{
+	font-family: 'Noto Sans Devanagari';
 	font-size: 20px;
+	font-weight: 700;
+	position: relative;
 }
 
 .webtitle2desc, .webtitledesc {
-	font-size: 12px;
+	font-size: 14px;
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+	position: relative;
 }
 
+.webtitle2 {
+	top: 10px;
+}
+
+.webtitledesc {
+top: -10px;
+}
 .webtitle:hover, .webtitle2:hover{
   text-shadow:0px 0px 5px #ffffff;
   -moz-transition: all 0.2s ease-in;
