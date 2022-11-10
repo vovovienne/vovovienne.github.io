@@ -5,10 +5,10 @@
 body {
   	font-family: sans-serif;
 	margin: 0 auto;
-	background: #383838;
+	background: #272727;
 	margin: 15px;
-
 }
+
 
 p {
 	color: #ffffff
@@ -20,57 +20,148 @@ p {
   gap: 10px;
   grid-auto-rows: minmax(700px, auto);
   text-align: center;
+  overflow: hidden;
 }
 
 
 #intropage {
-	grid-column: 1 / 6;
+	grid-column: 2 / 6;
 	grid-row: 1;
+	border-radius: 60px;
+	overflow: hidden;
+	width: 80%;
+    height: 85%;
+    margin: 0px;
+    margin-top: 2%;
+	margin-left: 3%;
+	position: relative;
 }
 
+#intropage video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: contain;
+  z-index: 0;
+  top: 0px;
+	left:0px;
+}
+
+/*#background-video {
+	width:100vw;
+	height: 100vw;
+	/*object-fit: cover;
+	position: fixed;
+	z-index: -1;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+}*/
+
+
 h1{	font-size: 120px;
-color: #ffffff;
+color: #e2e2e2;
 font-family: 'Secular One';
 letter-spacing: 8px;
 margin-top: 10%;
 }
 
 .nametxt{
+	position: relative;
 	grid-column: 3 / span 1;
   	grid-row: 1;
+	mix-blend-mode: difference;
 	align-items: center;
 	justify-items: center;
+    margin-right: 10%;
+    margin-top: 12%;
+    margin-bottom: 0%;
+	transition: all 1.5s ease;
+	cursor: default;
+	z-index: 1;
 }
+
+.folio{
+	color: #3b3b3b;
+	position: relative;
+    top: -29%;
+    left: 10%;
+    margin: 0px;
+    mix-blend-mode: difference;
+	transition: all 1.5s ease;
+	cursor: default;
+	z-index: 1;
+}
+
+.folio:hover{
+top: -62px;
+transition: all 1.5s ease;
+}
+
+ .nametxt:hover~.folio{
+top: -62px;
+transition: all 1.5s ease;
+}
+
+.nametxtwave{
+	position: absolute;
+	visibility: hidden;
+	color: #efefef;
+}
+
+.introdesc, .introdescsocials, h3{
+	font-family: 'Cormorant Infant';
+	font-weight: 300; }
 
 .introdesc{
-	font-family: 'Cormorant Infant';
-	letter-spacing: 1px;
+	visibility: hidden;
+	position: relative;
+    top: -24%;
+    margin: 0px;
+	font-size: 17px;
 }
 
-#folio{  
+@keyframes introslide {
+	from {left: 0%;}
+	to {left: }
+}
+.introdescsocials{
+	margin-top: 100px;
+}
+
+
+#showreel {grid-column: 1 / 6;
+
+}
+
+#folio{ 
   	grid-column: 1/6;
 	grid-row: 2;
 }
 
-h2{	font-size: 60px;
+h2{	font-size: 40px;
 color: #ffffff;
 	font-family: 'Noto Sans Devanagari';
 }
 
-h3 {font-size: 30px;
-	color: #ffffff;
+h3 {font-size: 15px;
+	color: #343434;
 }
 
 p{
-	font-family: 'Cormorant Infant';
+	font-family: 'Source Sans Pro';
 }
 
-.webtitle{
+.webtitle, .webtitle2{
 	font-size: 20px;
-	font-family: 'Cormorant Infant';
 }
 
-.webtitle:hover{
+.webtitle2desc, .webtitledesc {
+	font-size: 12px;
+}
+
+.webtitle:hover, .webtitle2:hover{
   text-shadow:0px 0px 5px #ffffff;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
@@ -88,8 +179,22 @@ section {
 #instalogo {
 	height: 60px;
 	width:auto;
-	align-items: center;
+	align-items: end;
 	justify-items: center;
+	z-index: -1;
+	margin-top: 0;
+	margin-top: -30px;
+}
+
+#contactmetxt{
+    height: 60px;
+	width:auto;
+	align-items: end;
+	justify-items: center;
+	z-index: -1;
+	font-family: 'Secular One';
+	margin-bottom: 0;
+    font-size: 12px;
 }
 
 .pdfviewer {
@@ -103,44 +208,79 @@ section {
 	position: fixed;
 	text-align: left;
 	line-height:25px;
-	font-family: 'Cormorant Infant';
+	font-family: 'Secular One';
+	left: 3%;
+	top: 45%;
 
+}
+
+#socials {
+	position: fixed;
+	grid-column: 6;
+	right: 3%;
+	top: 45%;
+}
+
+.reeltitle{
+	font-weight: 700;
+}
+
+.showtxt{ margin: 0;
+	color: #ffffff;
+	font-size: 40px;
+    text-align: left;
+    position: relative;
+    left: 15%;
+    top: 40%;
+}
+
+.reeltxt{ margin: 0;
+	color: #ffffff;
+	font-size: 40px;
+    text-align: end;
+    position: relative;
+    right: 16%;
+    top: 30%;
 }
 
 .sidenav, a:link, a:visited {
     text-decoration: none;
 	color: #fdfdfd
+		
 }
 
 #hidnavtxt1, #hidnavtxt2, #hidnavtxt3{
-	visibility:hidden;
+	opacity: 0%;
+	visibility: hidden;
 }
 
-#foliotxt:hover, #animationstxt:hover, #websitetxt:hover{
+#showreeltxt:hover, #abouttxt:hover, #workstxt:hover{
 	opacity: 50%;
 }
 
-#foliotxt:hover ~ #hidnavtxt1, #websitetxt:hover ~ #hidnavtxt2, #animationstxt:hover ~ #hidnavtxt3  {
+#showreeltxt:hover ~ #hidnavtxt1, #abouttxt:hover ~ #hidnavtxt2, #workstxt:hover ~ #hidnavtxt3  {
 	visibility: visible;
+	opacity: 100%;
+	transition: all 1.5s ease;
 }
 
 
-
-
-.websites{ 
-	grid-column: 1 / 6;
-	grid-row: 4;
+#about{
+	grid-column: 3;
+    height: 100px;
+    text-align: center;
 }
 
-#web{	grid-column: 1 / 6;
-	grid-row: 3;}
-
-#animations{ 
-	grid-column: 1 / 6;
-	grid-row: 4;
+.abttitle {
+	position: relative;
+    left: -80%;
+    text-align: end;
+}
+.aboutmedesc{
+	position: relative;
+    width: 450px;
+    text-align: left;
+    left: 40%;
+    top: -95%;
 }
 
-.web1 {
-	grid-column: 2 / 3;
-	grid-row: 4;
-}
