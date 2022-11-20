@@ -1,21 +1,21 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>VL FOLIO</title>
   <link rel="stylesheet" href="css/style.css">
-	
+	<link rel="stylesheet" href="aos-master/dist/aos.css" />
 	<script>
 	</script>
 </head>
 	    <meta charset="utf-8">
-  <link rel="stylesheet"
+    <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Secular+One|Source+Sans+Pro|Noto+Sans+Devanagari">
 <body>
 
 <div class = "wrapper">
   <div id="intropage">
 
-  
-    <h1 class = "nametxt"> VOVO'S </h1>
+    <h1 class = "nametxt"> VIV'S </h1>
 	  <h1 class = "folio"> FOLIO </h1>
 	  <h3 class = "introdesc"> Welcome to my </h3>
 	  
@@ -24,26 +24,24 @@
 	<source src="images/Comp%201_1.mp4" type="video/mp4">
 	</video>
 
-  <div id= "nav" class="sidenav">
-   <a href="#showreel" id="showreeltxt">1 <a id="hidnavtxt1">- SHOWREEL </a><br></a>
-  <a href="#about" id="abouttxt"> 2 <a id="hidnavtxt2">- ABOUT ME </a><br></a>
-   <a href="#works" id="workstxt"> 3 <a id="hidnavtxt3">- WORKS </a><br></a>
+  <div data-aos="fade-right" id= "nav" class="sidenav">
+   <a href="#showreel" id="showreeltxt"> SHOWREEL <br></a>
+   <a href="#about" id="abouttxt"> ABOUT ME <br></a>
+   <a href="#motion" id="workstxt"> MOTION<br></a>
+   <a href="#web" id="webdesworks"> WEB<br></a>
+   <a href="#uxui" id="uxuitxt"> UX &#38; UI <br></a>
+   <a href="#threed" id="threedtxt"> 3D <br></a>
+   <a href="#design" id="commdestxt"> COMM DES <br></a>
+   <a href="#illust" id="illusttxt"> ILLUST <br></a>
   </div>
 	
-	  
-	  <div id= "socials">
-		  <p id = "contactmetxt"> Contact me <br>on: </p>
-    <a href="https://www.instagram.com/daik0n/?hl=en" target=”_blank”><img id= "instalogo" src="images/instalogo.png" alt="Instagram"></a>   </div>
-	
-	  
-	   </div>
-	
+	</div>
 
 	
-	<div id="showreel">
-	  	<h1 class = "showtxt"> SHOW </h1>
-		<h1 class = "reeltxt"> REEL </h1>
-		<iframe id = "showreelvid" src="https://drive.google.com/file/d/1-Smgk7NpgVcXdDjb-xc_CdMrt-HKbxVU/preview" width="640" height="360" allow="autoplay"></iframe>
+	<div data-aos="fade-up" id="showreel">
+	  	<div data-aos="flip-down"><h1 class = "showtxt"> SHOW </h1></div>
+		<div data-aos="flip-up" id = "reeltxtcont"><h1 class = "reeltxt"> REEL </h1></div>
+		<iframe id = "showreelvid" src="https://drive.google.com/file/d/1-Smgk7NpgVcXdDjb-xc_CdMrt-HKbxVU/preview" width="1080" height="520" allow="autoplay"></iframe>
 
 
 	
@@ -59,32 +57,189 @@
 	
 
 	
-  <div id="about">
-	  <h2 class= "abttitle"> About me! </h2>
-	   <p class= "aboutmedesc"> Hi! I'm Vivienne Lam (Viv or Vovo). Im currently studying Design and IT at Monash University and graduating in Interactive Media. I love web design, animation and anything art related! </p>
-
-		  
-	  <div id ="works">
+  <div id="about" data-aos="fade-up" >
+	  <h1 class= "abttitle"> ABOUT <br> ME </h1>
+	   <p class= "aboutmedesc"> Hi! I'm Vivienne Lam. Im currently studying Design and IT at Monash University, graduating in Interactive Media. I love web design, animation and anything art related! I have a passion for creating digital works and love seeing creative ideas come to life. </p>
 	  
-	<h2 class= "animtitle"> WEB </h2>
-		  
-	  <div class= "web1">
-	  	<a class = "webtitle" href="pages/vivienne_assignment1/page.html " > MoAF Website </a>
-	  	<h2 class = "webtitledesc" > A website created for a fictional online muesum exhibit where I had picked the topic 'Beyond the Solar System'.</h2>
-		  
-		  <a class = "webtitle2" href="pages/site/proto.html"> 3D Web Des </a>
-		  <h2 class = "webtitle2desc" href="pages/site/proto.html"> This project required us to create a 3D holiday-themed space within a web page with a limited amount of faces. I chose to create a 3D interior for Christmas which gets the user to play a small game. Can you complete the objective?</h2>
+	  <p id = "contactmetxt"> Contact me! </p>
+	  <div id= "socialicons">
+		<a href="https://www.instagram.com/daik0n/?hl=en" target=”_blank”><img id= "instalogo" src="images/instalogo.png" alt="Instagram"></a>   
+
+		 <input type="text" value="vvivienne.lam@gmail.com" id="myEmail">
+
+		 <img id= "emaillogo" src="images/email.png" alt="Email" onclick="copyEmail()"> 
+
+		 <a href="https://www.linkedin.com/in/vivienne-lam-29b191238/" target=”_blank”><img id= "linkedInlogo" src="images/linkedin.png" alt="LinkedIn"></a>   
+		</div>
+
 		  
 	  
 	  </div>
 	
+	 <div id ="motion" data-aos="fade-up">
+	  
+		<h1 class= "myworkstitle"> MOTION </h1>
+			
+		 <iframe src="https://drive.google.com/file/d/1QV4FGO1SdenGpSrubdMDfXYsNYWmk4ZC/preview" width="640" height="360" allow="autoplay"></iframe>
+		 
+		 <iframe src="https://drive.google.com/file/d/16CpgN3962CZQiRnF1m8TYxHf7QX7fi2Y/preview" width="640" height="360" allow="autoplay"></iframe>
+		 
+		 
 	</div>
 	
+	
+	<div data-aos="fade-up" id="web">
+		 
+		 <h1 class= "myworkstitle"> WEB </h1>
+		 
+		 <div id = "webwrapper1">
+			 
+			 <a href="pages/vivienne_assignment1/page.html " > <image src ="images/moaf.png" id = "MOAFthumbnail"></image> </a>
+			 <a class = "webtitle" href="pages/vivienne_assignment1/page.html " > MoAF Website </a>
+			  
+		  
+	  	<h2 id = "webtitledesc"> A website created for a fictional online muesum exhibit where I had picked the topic 'Beyond the Solar System'.</h2>
+			 </div>
+		  
+		 <div id="webwrapper2">
+			 
+		 
+			 
+		  <a href="pages/site/proto.html"><image src ="images/3Dweb.png" id = "webthumbnail"></image></a>
+		  <a class = "webtitle2" href="pages/site/proto.html"> Xmas Web Game </a>
+		  
+		  <h2 id="webtitle2desc"> This project required us to create a 3D holiday-themed space within a web page with a limited amount of faces. I chose to create a 3D interior for Christmas which gets the user to play a small game. Can you complete the objective?</h2>
+			 
+			 
+			 <p id="webintdesc"> Hover over the titles to see more info and Click on the images view the designs! </p>
+			  </div>
+		
+			 
+			 <div data-aos="fade-up" id ="uxui"> 
+			
+			
+					<h1 class= "myworkstitle" id= "uxuipagetitle"> UX &#38; UI </h1>
+				 		 
+				 <a href="https://www.figma.com/proto/WMw7WQeyi7zPGj8asecyRS/activation-webpage?node-id=0%3A1">
+					 <image src ="images/uxui/scultutt.png" id = "sculptureui"></image></a>
+				 
+				 
+				 <div id="bodlangtxtcont">
+					 
+					 <h2 class= "bodlangtitle"> Body Language Museum </h2>
+					 <p id = "bodlangdesc"> Another online museum design to display an interactive environment to better educate the public on what our body language could mean in regards to others as well as ourself.</p> 
+				 
+				 </div>
+		
+				 <a href="https://www.figma.com/proto/tFUfoQuM3sCkhWz40V9Qg9/webpage?node-id=0%3A1">
+					 <image src ="images/uxui/denim%20worldg.png" id = "denimui"></image></a>
+				
+				 <div id = "denimtxtcont"> 
+					 
+					 <h2 class= "denimfestitle"> Denim Festival Site </h2>
+					 <p id = "denimfesdesc"> For a made up festival of our choice where I decided to go with a denim themed festival to promote the upcycling of old denim. I created a webpage that would be compatible on phone as well as on a computer. </p>
+
+				 
+				 </div>
+				 
+		
+		
+			 </div>
+		
+		
 	</div>
+		 
+		 <div data-aos="fade-up" id ="threed">
+			 
+			 <h1 class= "myworkstitle"> 3D </h1>
+			 
+			 <div class = "3denvs"> 
+			 	<h2> 3D ENVIRONMENTS</h2>
+				 
+				 <video id="envvid" autoplay muted loop>
+					 <source src="images/3d/3denvisland_1.mp4" type="video/mp4">
+				 </video>
+				 <image src="images/3d/Promo%20Screenshot%205.png" id="img2"></image>
+				 <image src="images/3d/A1pt1.png" id="img5"></image>
+				 <video id="envvid2" autoplay muted loop>
+					 <source src="images/3d/3denv1_1.mp4" type="video/mp4">
+				 </video> <image src="images/3d/2.png" id="img3"></image>
+				 <image src="images/3d/5.png" id="img4"></image>
+			 
+			 
+			 </div>
+			 
+			 <div data-aos="fade-up" id="chardes">
+			 	<h2> 3D CHARACTER ANIMATION </h2>
+				 
+				 <video id="charanim" autoplay muted loop>
+					 <source src="images/3d/char.mp4" type="video/mp4">
+				 </video>
+				 <image src="images/3d/wawa.png" id="img7"></image>
+				  <image src="images/3d/hhehehehhee.png" id="img6"></image>
+				 <image src="images/3d/jhkj.png" id="img8"></image>
+				 
+				  
+			 </div>
+		
+		</div>
+		 	
+		 
+		<div  data-aos="fade-up" id ="design"> 
+			
+			
+			<h1 class= "myworkstitle"> COMM DES </h1>
+			
+			<audio id="audio" src="REMEMBERING%20YESTERDAYS.mp3"></audio>
+			 <image src="images/commdes/1-Sounding-Type-Template-Sleeve.png" id="disc" onclick = "playdisc()"></image>
+			<image src="images/commdes/maybealbum.png" id="albumcover"></image>
+			<image src="images/commdes/backofcover3.png" id="albumback"></image>
+			
+			<p id="discdesc"> Click the disc to play the track. </p>
+			<image src="images/commdes/3_spotify_cover.png" id="spotifycover"></image>
+			
+			<p id="albumdesc"> A unoffical album design based around the instrumental track 'Remembering Yesterdays' by Mocky. We were required to create a disc design, album cover and back as well as a spotify album cover.</p>
+			
+			
+			<image src="images/commdes/tripp.jpg" id="tripytch"></image>
+			<image src="images/commdes/IMG_6376.PNG" id="instaimg1"></image>
+			<image src="images/commdes/IMG_6377.PNG" id="instaimg2"></image>
+			<image src="images/commdes/IMG_6378.PNG" id="instaimg3"></image>
+			<image src="images/commdes/IMG_6379.PNG" id="instaimg4"></image>
+			<image src="images/commdes/heLP.jpg" id="shoeposter"></image>
+			
+		
+		</div>
+	
+
+		 
+		<div data-aos="fade-up" id ="illust"> 
+			
+				<h1 class= "myworkstitle"> ILLUSTRATIONS </h1>
+			 <p class= "illustdesc"> I've been drawing under the handle <a id = "instagramlinktxt" href="https://www.instagram.com/daik0n/?hl=en" target=”_blank”>@daik0n </a> and go by the name Dai when producing illustrations. </p>
+
+		</div>
+	
+	
+	
+	
+
+	<div class = "footer">
+		<p id = "endingmsg"> Thank you so much for stopping by! That's it for the time being but much more works are in progress ! :&#41; <br> If you have any questions feel free to ask or contact me via Instagram, Linked In or through email !</p>
+
+	</div>
+	
+	
   
 	<script>
 	</script>
 	
 	</div>
+	
+	<script src="java.js"></script>	
+	<script src="aos-master/dist/aos.js"></script>
+	 <script>
+    AOS.init();
+  	</script>
 </body>
 </html>
