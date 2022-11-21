@@ -170,7 +170,6 @@ transition: all 1.5s ease;
 .sidenav, a:link, a:visited {
     text-decoration: none;
 	color: #fdfdfd
-		
 }
 
 #hidnavtxt1, #hidnavtxt2, #hidnavtxt3{
@@ -340,9 +339,21 @@ transition: all 1.5s ease;
  text-decoration: none;
 }
 
+#instagramlinktxt:hover{
+	text-shadow:
+    -0.2px -0.2px 0 #ffffff,
+    0.2px -0.2px 0 #ffffff,
+    -0.2px 0.2px 0 #ffffff,
+    0.2px 0.2px 0 #ffffff;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
 #MOAFthumbnail{
 	height: 360px;
-	width: auto;
+	width: 89%;
 	display: inline-block;
 }
 
@@ -460,7 +471,6 @@ transition: all 1.5s ease;
 
 #uxuipagetitle {
 	margin-top: -6%;
-    left: -30%;
     position: relative;
 }
 
@@ -563,6 +573,8 @@ transition: all 1.5s ease;
 	top: -2%;
 }
 
+.disc{}
+
 #discdesc{ 
 	font-family: 'Secular One';
     font-size: 16px;
@@ -653,18 +665,171 @@ transition: all 1.5s ease;
 	left: -34%;
 }
 
+.illust1, .illust2, .illust3, .illust4, .illust5, .illust6, .illust7, .illust8 {
+	width: 25%;
+	position: relative;
+	margin: -5%;
+}
 
+.cont1, .cont2{
+	position: relative;
+	float: left;
+	width: 90vw;
+    display: flex;
+    margin: 0;
+	gap: 10%;
+}
+
+.illust1:hover, .illust2:hover, .illust3:hover, .illust4:hover, .illust5:hover, .illust6:hover, .illust7:hover, .illust8:hover, .illust10:hover, .illust11:hover{
+	transform: translateY(-6%);
+	transition: 0.6s ease;
+}
+
+.textreveal{
+	display: block;
+	font-size: 10px;
+	font-weight: 500;
+	position: relative;
+	opacity: 1;
+	text-align: left;
+	width: 24%;
+	transition: 0.6s ease;
+}
+
+.cont1{
+	left: 8%;
+    top: 10%;
+}
+
+.cont2{
+    left: 8%;
+    top: 27%;
+}
+
+.illustdesc {
+	font-size: 14px;
+	width: 52%;
+	position: relative;
+	left: 25%;
+}
+
+.illust1desc, .illust2desc, .illust3desc, .illust4desc, .illust5desc, .illust6desc, .illust7desc, .illust8desc
+{
+	display: block;
+	font-size: 10px;
+	font-weight: 500;
+	position: relative;
+	opacity: 0;
+	text-align: left;
+	width: 24%;
+}
+
+
+.textcont1 {
+	position: relative;
+    display: flex;
+    width: 98%;
+    left: 4%;
+    top: 13.8%;
+}
+
+.textcont2 {
+	position: relative;
+    display: flex;
+    width: 98%;
+    left: 4%;
+    top: 30.5%;
+}
+
+.cont3 {
+	position: relative;
+    left: 133%;
+    top: 26%;
+}
+
+.illust9{
+	position: relative;
+    width: 250%;
+}
+
+#illust9desc{
+	font-size: 10px;
+	font-weight: 500;
+	width: 200%;
+    text-align: left;
+    position: relative;
+	margin-top: -18%;
+    left: 5%;
+	opacity:0;
+}
+
+.illust9:hover{
+	transform: translateY(-4%);
+	transition: 0.6s ease; 
+}
+
+.illust10, .illust11 {
+	width: 200%;
+	position: relative;
+}
+
+.illust9:hover ~ #illust9desc, .illust10:hover ~ #illust10desc, .illust11:hover ~ #illust11desc{
+	opacity: 1;
+	transition: 0.6s ease; 
+}
+
+
+#illust10desc, #illust11desc{
+	font-size: 10px;
+	font-weight: 500;
+	width: 200%;
+    text-align: left;
+    position: relative;
+	opacity:0;
+}
+
+#illust10desc{
+	margin-top: 105%;
+    left: 2%;
+}
+
+#illust11desc{
+	margin-top: -14%;
+    left: 2%;
+}
+
+.cont4{
+	position: relative;
+    left: 405%;
+    top: -24.8%;
+}
+
+.cont5{
+	position: relative;
+    left: 405%;
+    top: -22%;
+}
+
+#magazinelink{
+	font-family: 'Secular One';
+    font-size: 13px;
+    position: relative;
+    text-align: center;
+    animation: 1.5s infinite alternate bounce;
+	left: 228%;
+    margin-top: -145%;
+}
 
 /* footer */
 
 .footer{
-	grid-column: 1/7;
-	background-color:  #f0f0f0;
-	width: 100vw;
-	height: 18%;
-	overflow: hidden;
-	position: relative;
-    top: 85%;
+	background-color: #f0f0f0;
+    width: 110vw;
+    height: 26vh;
+    overflow: hidden;
+    position: relative;
+    top: 95%;
+    margin-left: -23%;
 }
 
 #endingmsg {
@@ -673,5 +838,15 @@ transition: all 1.5s ease;
 	font-size: 15px;
 	color: #333333;
 	position: relative;
-	top: 10%;
+	top: 16%;
+	left:4%;
+}
+
+#footerlinks:link, #footerlinks:visited{
+  	color: #333333;
+}
+
+#footerlinks:hover{
+	opacity: 50%;
+    transition: 0.3s ease;
 }
