@@ -35,7 +35,7 @@ section {
     width: 73vw;
     height: 40vw;
     margin: 0px;
-    margin-top: 5%;
+    margin-top: 2%;
     position: relative;
 }
 
@@ -827,7 +827,7 @@ transition: all 1.5s ease;
     height: 26vh;
     overflow: hidden;
     position: relative;
-    top: 95%;
+    top: 91%;
     margin-left: -23%;
 }
 
