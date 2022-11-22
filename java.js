@@ -1,5 +1,3 @@
-
-
 function copyEmail() {
   var copyText = document.getElementById("myEmail");
 
@@ -23,6 +21,7 @@ function playdisc() {
 				document.getElementById('disc').className = 'discanim';
 			}
 }
+
 
 function showtext () {
 	document.getElementById('illust1desc').className = 'textreveal';
@@ -88,6 +87,7 @@ function showtext8 () {
 function hidetext8 () {
 	document.getElementById('illust8desc').className = 'illust8desc';
 }
+
 
 $(window).on("load", function(){
 	$(".loading").fadeOut("slow");
