@@ -11,6 +11,10 @@ body {
 	transition: all 1s ease;
 }
 
+.preload{
+	overflow: hidden;
+}
+
 section {
   overflow:hidden;
   height: 720px;
@@ -24,29 +28,6 @@ section {
   grid-auto-rows: minmax(700px, auto);
   text-align: center;
   overflow: hidden;
-}
-
-#intropage {
-    grid-column: 2 / 6;
-    grid-row: 1;
-    border-top-left-radius: 65px;
-	border-top-right-radius: 65px;
-    overflow: hidden;
-    width: 73vw;
-    height: 40vw;
-    margin: 0px;
-    margin-top: 2%;
-    position: relative;
-}
-
-#intropage video {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  object-fit: fill;
-  z-index: 0;
-  top: 0px;
-	left:0px;
 }
 
 h1{	
@@ -73,7 +54,61 @@ p{
 	color: #ffffff;
 }
 
+/*loading page*/
+
+.loading {
+	position: fixed;
+	z-index: 10;
+	background-color: #d8d8d8;
+	width:100%;
+	height:100%;
+	top: 0;
+	left:0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#loadingwalk,#loadingtxt{
+	position:relative;
+}
+
+#loadingwalk{
+	width: 35%;
+   left: 14%;
+    height: 50%;
+}
+
+#loadingtxt{
+	width: 28%;
+    left: -17%;
+    top: 30%;
+}
+
 /*frontpage*/
+
+#intropage {
+    grid-column: 2 / 6;
+    grid-row: 1;
+    border-top-left-radius: 65px;
+	border-top-right-radius: 65px;
+    overflow: hidden;
+    width: 73vw;
+    height: 40vw;
+    margin: 0px;
+    margin-top: 2%;
+    position: relative;
+}
+
+#intropage video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: fill;
+  z-index: 0;
+  top: 0px;
+	left:0px;
+}
 
 .nametxt{
 	position: relative;
