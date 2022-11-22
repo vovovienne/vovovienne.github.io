@@ -14,9 +14,14 @@ function copyEmail() {
 
 
 function playdisc() {
-  document.getElementById('disc').className = 'discanim';
 	var audio = document.getElementById("audio");
-	audio.play();
+	if (audio.duration > 0 && !audio.paused) {
+				document.getElementById('disc').className = 'disc';
+                audio.pause();
+            } else {
+                audio.play();
+				document.getElementById('disc').className = 'discanim';
+			}
 }
 
 function showtext () {
