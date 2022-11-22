@@ -83,3 +83,8 @@ function showtext8 () {
 function hidetext8 () {
 	document.getElementById('illust8desc').className = 'illust8desc';
 }
+
+$(window).on("load", function(){
+	$(".loading").fadeOut("slow");
+	$("body").removeClass("preload");
+})
