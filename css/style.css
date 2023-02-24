@@ -83,53 +83,45 @@ p{
 	width: 28%;
     left: -17%;
     top: 30%;
-}
+} 
 
 /*frontpage*/
 
 #intropage {
     grid-column: 2 / 6;
     grid-row: 1;
-    border-top-left-radius: 65px;
-	border-top-right-radius: 65px;
     overflow: hidden;
-    width: 73vw;
-    height: 40vw;
-    margin: 0px;
-    margin-top: 2%;
+    margin-top: 0%;
+    margin-left: -60%;
     position: relative;
 }
 
 #intropage video {
-  width: 100%;
-  height: 100%;
+    height: 77%;
+    margin-left: -11%;
+    margin-top: -13%;
   position: absolute;
   object-fit: fill;
   z-index: 0;
-  top: 0px;
-	left:0px;
 }
 
-.nametxt{
+#nametxt{
 	position: relative;
-	grid-column: 3 / span 1;
-  	grid-row: 1;
 	mix-blend-mode: difference;
 	align-items: center;
 	justify-items: center;
-    margin-right: 14%;
-    margin-top: 12%;
-    margin-bottom: 0%;
+	margin-left: -5%;
+    margin-top: 5%;
 	transition: all 1.5s ease;
 	cursor: default;
 	z-index: 1;
 }
 
-.folio{
+#folio{
 	color: #3b3b3b;
 	position: relative;
-    top: -28.5%;
-    left: 10%;
+   	top: -36.5%;
+    left: 3%;
     margin: 0px;
     mix-blend-mode: difference;
 	transition: all 1.5s ease;
@@ -137,13 +129,13 @@ p{
 	z-index: 1;
 }
 
-.folio:hover{
-top: -62px;
+#folio:hover{
+top: -20%;
 transition: all 1.5s ease;
 }
 
- .nametxt:hover~.folio{
-top: -62px;
+ #nametxt:hover~#folio{
+top: -20%;
 transition: all 1.5s ease;
 }
 
@@ -778,7 +770,7 @@ transition: all 1.5s ease;
 .cont3 {
 	position: relative;
     left: 133%;
-    top: 26%;
+    top: 20.5%;
 }
 
 .illust9{
@@ -858,12 +850,12 @@ transition: all 1.5s ease;
 
 .footer{
 	background-color: #f0f0f0;
-    width: 110vw;
-    height: 26vh;
+    width: 100vw;
+    height: 200px;
     overflow: hidden;
     position: relative;
-    top: 91%;
-    margin-left: -23%;
+	margin-top: 120%;
+    margin-left: -14%;
 }
 
 #endingmsg {
@@ -872,8 +864,7 @@ transition: all 1.5s ease;
 	font-size: 15px;
 	color: #333333;
 	position: relative;
-	top: 16%;
-	left:4%;
+	margin-top: 3%;
 }
 
 #footerlinks:link, #footerlinks:visited{
