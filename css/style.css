@@ -96,48 +96,49 @@ p{
     position: relative;
 }
 
+#introheading {
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+	position: relative;
+    height: 100px;
+}
+
 #intropage video {
-    height: 77%;
-    margin-left: -11%;
-    margin-top: -13%;
-  position: absolute;
-  object-fit: fill;
-  z-index: 0;
+    height: 40%;
+	position: relative;
 }
 
 #nametxt{
-	position: relative;
-	mix-blend-mode: difference;
-	align-items: center;
-	justify-items: center;
-	margin-left: -5%;
-    margin-top: 5%;
+    position: relative;
+    mix-blend-mode: difference;
+    justify-items: center;
+    cursor: default;
+    z-index: 1;
 	transition: all 1.5s ease;
-	cursor: default;
-	z-index: 1;
 }
 
 #folio{
 	color: #3b3b3b;
-	position: relative;
-   	top: -36.5%;
-    left: 3%;
-    margin: 0px;
+    position: relative;
+	margin-left: -5%;
+    margin-top: 10%;
     mix-blend-mode: difference;
+    cursor: default;
+    z-index: 1;
 	transition: all 1.5s ease;
-	cursor: default;
-	z-index: 1;
 }
 
 #folio:hover{
-top: -20%;
-transition: all 1.5s ease;
+	transition: all 1.5s ease;
+margin-top: 15%;
 }
 
  #nametxt:hover~#folio{
-top: -20%;
-transition: all 1.5s ease;
+	 transition: all 1.5s ease;
+	 margin-top: 15%;
 }
+
 
 .nametxtwave{
 	position: absolute;
