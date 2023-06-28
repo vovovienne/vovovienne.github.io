@@ -692,7 +692,8 @@ margin-top: 15%;
 	left: -34%;
 }
 
-.illust1, .illust2, .illust3, .illust4, .illust5, .illust6, .illust7, .illust8 {
+.illust1, .illust2, .illust3, .illust4, .illust6, .illust7, .illust8, .illust9, .illust10, .illust11
+.illust12 {
 	width: 25%;
 	position: relative;
 	margin: -5%;
@@ -705,9 +706,10 @@ margin-top: 15%;
     display: flex;
     margin: 0;
 	gap: 10%;
+	left: 21%;
 }
 
-.illust1:hover, .illust2:hover, .illust3:hover, .illust4:hover, .illust5:hover, .illust6:hover, .illust7:hover, .illust8:hover, .illust10:hover, .illust11:hover{
+.illust1:hover, .illust2:hover, .illust3:hover, .illust4:hover, .illust5:hover, .illust6:hover, .illust7:hover, .illust8:hover, .illust10:hover, .illust11:hover, .illust12:hover, .illust13:hover, .illust14:hover, .illust15:hover, .illust16:hover, .illust17:hover{
 	transform: translateY(-6%);
 	transition: 0.6s ease;
 }
@@ -724,13 +726,14 @@ margin-top: 15%;
 }
 
 .cont1{
-	left: 8%;
-    top: 10%;
+    top: 3%;
 }
-
 .cont2{
-    left: 8%;
-    top: 27%;
+    top: 7%;
+
+}
+.cont3{
+	margin-top: 5%;
 }
 
 .illustdesc {
@@ -741,53 +744,67 @@ margin-top: 15%;
 }
 
 .illust1desc, .illust2desc, .illust3desc, .illust4desc, .illust5desc, .illust6desc, .illust7desc, .illust8desc
+, #illust17desc, #illust16desc, #illust15desc, #illust9desc, #illust10desc, #illust11desc, #illust12desc, #illust13desc, #illust14desc, #illust15desc, #illust18desc
 {
-	display: block;
 	font-size: 10px;
 	font-weight: 500;
 	position: relative;
-	opacity: 0;
+	/*opacity: 0;*/
 	text-align: left;
 	width: 24%;
 }
 
+.textcont1, .textcont2, .textcont3, .textcont4 {
+	position: relative;
+    display: flex;
+    width: 98%;
+}
 
 .textcont1 {
-	position: relative;
-    display: flex;
-    width: 98%;
-    left: 4%;
-    top: 13.8%;
+ 	left: 17%;
+    top: 4%;
 }
-
 .textcont2 {
-	position: relative;
-    display: flex;
-    width: 98%;
-    left: 4%;
-    top: 30.5%;
+    left: 17%;
+    top: 8.1%;
+}
+.textcont3{
+	    top: 0.8%;
+}
+.textcont4{
+	margin-top: -2.3%;
+    margin-left: 13%;
+    width: 105%;
 }
 
-.cont3 {
-	position: relative;
-    left: 133%;
-    top: 20.5%;
+#illust14desc, #illust15desc {margin-left: 25%;
+    margin-top: -3.3%;
+}
+#illust16desc{text-align: right;
+    width: auto;
+    margin-right: 25%;
+    margin-top: 10.7%;}
+
+#illust17desc{text-align: right;
+    width: auto;
+	margin-right: 31.5%;
+    margin-top: -1.7%;
+}
+
+#illust18desc{    
+	margin-left: 17%;
+    margin-top: -2.3%;
 }
 
 .illust9{
 	position: relative;
-    width: 250%;
+	width: 45%;
 }
 
 #illust9desc{
-	font-size: 10px;
-	font-weight: 500;
-	width: 200%;
-    text-align: left;
-    position: relative;
-	margin-top: -18%;
-    left: 5%;
-	opacity:0;
+    margin-left: 14%;
+    width: 46%;
+    margin-top: 1%;
 }
 
 .illust9:hover{
@@ -795,46 +812,61 @@ margin-top: 15%;
 	transition: 0.6s ease; 
 }
 
-.illust10, .illust11 {
-	width: 200%;
+.illust10{
+	width: 29.1%;
+	position: relative;
+	margin-left: 4.5%;
+}
+
+.illust11,.illust12, .illust5{
+	width: 25%;
 	position: relative;
 }
 
-.illust9:hover ~ #illust9desc, .illust10:hover ~ #illust10desc, .illust11:hover ~ #illust11desc{
+.illust11, .illust12{
+	margin-left: -5px;
+}
+
+.illust13,.illust14{
+	width: 50%;
+	position: relative;
+	margin: 1.5%;
+}
+
+.illustsection3{
+	margin-top: 30%;
+}
+.illustsection4{
+	margin-top: 6%;
+}
+.illustsection5{
+	margin-top: 2%;
+}
+
+.illust9:hover ~ #illust9desc, .illust10:hover ~ #illust10desc, .illust11:hover ~ #illust11desc, illust12:hover ~ #illust12desc, illust13:hover ~ #illust14desc, illust14:hover ~ #illust15desc, illust15:hover ~ #illust18desc  {
 	opacity: 1;
 	transition: 0.6s ease; 
 }
 
-
-#illust10desc, #illust11desc{
-	font-size: 10px;
-	font-weight: 500;
-	width: 200%;
-    text-align: left;
-    position: relative;
-	opacity:0;
-}
-
-#illust10desc{
-	margin-top: 110%;
-    left: 2%;
-}
-
-#illust11desc{
-	margin-top: -14%;
-    left: 2%;
-}
-
 .cont4{
-	position: relative;
-    left: 405%;
-    top: -24.8%;
+    margin-top: -70%;
+
 }
 
 .cont5{
-	position: relative;
-    left: 405%;
-    top: -22%;
+	margin-top: 4%;
+}
+
+.illust15{
+    position: relative;
+	width: 36%;
+    margin-left: -32%;
+}
+
+.illust16, .illust17{
+    width: 27%;
+    position: relative;
+    margin-left: 37%;
 }
 
 #magazinelink{
@@ -843,20 +875,20 @@ margin-top: 15%;
     position: relative;
     text-align: center;
     animation: 1.5s infinite alternate bounce;
-	left: 228%;
-    margin-top: -145%;
+	left: 84%;
+    margin-top: -16%;
+    width: 11%;
 }
 
 /* footer */
 
 .footer{
-	background-color: #f0f0f0;
-    width: 100vw;
+    background-color: #f0f0f0;
+    width: 96vw;
     height: 200px;
     overflow: hidden;
     position: relative;
-	margin-top: 120%;
-    margin-left: -14%;
+    margin-top: 15%;
 }
 
 #endingmsg {
