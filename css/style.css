@@ -338,16 +338,11 @@ button {
 #aboutmedesc{
     position: absolute;
     text-align: left;
-<<<<<<< Updated upstream
-	left: 40%;
-    top: -116%;
-	
-=======
-    left: 112%;
+	left: 112%;
 	top: 38%;
 	width: 350px;
->>>>>>> Stashed changes
 }
+
 
 #aboutmecont {
 	padding-top: 8vh;
@@ -415,7 +410,7 @@ button {
 	animation: 1s alternate glitch;
 }
 
-.motiontxt, .3Dtxt, .webtxt, .commdestxt, .illusttxt {
+.motiontxt, .webtxt, .commdestxt, .illusttxt {
 	color: #ffffff;
 }
 
