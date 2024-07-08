@@ -5,15 +5,15 @@
   <link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="aos-master/dist/aos.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</head>
-	    <meta charset="utf-8">
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Secular+One|Source+Sans+Pro|Noto+Sans+Devanagari">
-<body class = "preload">
 
-<div class = "wrapper">
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Secular+One|Source+Sans+Pro|Noto+Sans+Devanagari">
+	<link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Reddit+Mono:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+
+<body class = "preload">
 	
-	<div class = "loading">
+	<!-- <div class = "loading">
 			<video id="loadingwalk" autoplay loop muted>
 			<source src="images/Comp%202.mp4" type="video/mp4">
 			</video>
@@ -21,15 +21,20 @@
 			<source src="images/loadingtxt.mp4" type="video/mp4">
 			</video> 
 	
-	</div> 
+	</div>  -->
 	
-	  <div id="intropage">
+	  <div id="intropage" class = "pagesection">
+		<div id = "introheading">	
+			<h1 id = "nametxt" class = "introheadingformat"> VIV'S </h1>
+			<h1 id = "folio" class = "introheadingformat"> FOLIO </h1>
+		</div>
 
-			<div id = "introheading"><h1 id = "nametxt"> VIV'S </h1>
-			<h1 id = "folio"> FOLIO </h1></div>
-			  <video id="background-video" autoplay loop muted>
-			<source src="images/Comp%201_1.mp4" type="video/mp4">
-			</video>
+			<div id = "introanimationcont"> 
+				<video id="background-video" autoplay loop muted>
+				<source src="images/Comp%201_1.mp4" type="video/mp4">
+				</video>
+			</div>
+			
 		
 
 		  <div data-aos="fade-right" id= "nav" class="sidenav">
@@ -42,307 +47,246 @@
 		   <a href="#design" id="commdestxt"> COMM DES <br></a>
 		   <a href="#illust" id="illusttxt"> ILLUST <br></a>
 		  </div>
-
-		</div>
+	</div>
 
 	
-	<div data-aos="fade-up" id="showreel">
-	  	<div data-aos="flip-down"><h1 class = "showtxt"> SHOW </h1></div>
+	<div id="showreel" class = "pagesection" data-aos="fade-up">
+	  	<div data-aos="flip-down"id = "showtxtcont"><h1 class = "showtxt"> SHOW </h1></div>
 		<div data-aos="flip-up" id = "reeltxtcont"><h1 class = "reeltxt"> REEL </h1></div>
 		<iframe id = "showreelvid" src="https://drive.google.com/file/d/1-Smgk7NpgVcXdDjb-xc_CdMrt-HKbxVU/preview" width="1080" height="520" allow="autoplay"></iframe>
-
-
-	
 	</div>
 	
+<<<<<<< Updated upstream
 	  <div id="about" data-aos="fade-up" >
 		  <h1 class= "abttitle"> ABOUT <br> ME </h1>
 		   <p class= "aboutmedesc">  Hi! I'm Vivienne Lam. I've graduated in 2023 with a Bachelors of Design and IT, majoring in Interactive Media at Monash University.I value unique ideas and well thought out design. I believe my strength mainly lies within motion design but I have strong passion for web design where I enjoy implementing design in a way that allows it to be interactive. Below are some of the works that I have really enjoyed through my time in Uni 
 			   and I hope that you can enjoy viewing them !   </p>
+=======
+	<div id="about" class = "pagesection" data-aos="fade-up" >
+>>>>>>> Stashed changes
 
-		  <p id = "contactmetxt"> Contact me! </p>
-		  <div id= "socialicons">
+		<div id = "aboutmecont">
+			<h1 id = "abttitle" class = "abouttxtformat"> ABOUT <br> ME </h1>
+			<p id = "aboutmedesc" class = "abouttxtformat"> Hi! I'm Vivienne Lam and
+			I've graduated with a Bachelors of Design & IT majoring in Interactive Media. I enjoy
+			being pushed creatively where I have really enjoyed the range of communication design projects I have completed within my course where I am especially interested in web design as well as animation and motion.
+			I am always be looking for ways to grow my skillset as well as learn new skills within the digital design field!  </p>
+		</div>
+        
 
-			 <input type="text" value="vvivienne.lam@gmail.com" id="myEmail">
-
-			 <img id= "emaillogo" src="images/email.png" alt="Email" onclick="copyEmail()"> 
-
-			 <a href="https://www.linkedin.com/in/vivienne-lam-29b191238/" target=”_blank”><img id= "linkedInlogo" src="images/linkedin.png" alt="LinkedIn"></a>   
-			</div>
-
-
-
-		  </div>
+		<div id = "socialcont"> 	
+			<p id = "contactmetxt"> Contact me! </p>
+			<div id= "socialicons">
 	
-	 <div id ="motion" data-aos="fade-up">
+				 <input type="text" value="vvivienne.lam@gmail.com" id="myEmail">
+	
+				 <svg  id= "emaillogo" class = "socialmediabuttons" onclick="copyEmail()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#e2e2e2" d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>
+			
+				<a class = "socialmediabuttons" href="https://www.linkedin.com/in/vivienne-lam-29b191238/" target=”_blank”>
+					<svg id= "linkedInlogo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#e2e2e2" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+				</a>   
+			</div>
+		</div>
+	
+
+	 </div>
+	
+	 <div id ="motion" class = "pagesection" data-aos="fade-up">
 	  
-		<h1 class= "myworkstitle"> MOTION </h1>
-			
-		 <iframe id="motionvid1" src="https://drive.google.com/file/d/1QV4FGO1SdenGpSrubdMDfXYsNYWmk4ZC/preview" width="640" height="360" allow="autoplay"></iframe>
-		 
-		 <p id = "motiondesc1"> For a free choice animation project, I developed this motion piece which focuses on a childlike imagination. The plot follows a young girl who is taken to the aquarium where she wanders off and we see her imagination take over.</p>
-		 
-		 <iframe id="motionvid2" src="https://drive.google.com/file/d/16CpgN3962CZQiRnF1m8TYxHf7QX7fi2Y/preview" width="640" height="360" allow="autoplay"></iframe>
-		 
-		<p id = "motiondesc1"> This motion piece was for the Little Food Festival 2023 and was display at Federation Square for the event. The theme I chose to focus on was pickling which I explain the environmental impact of food waste and the importance of implementing food preservation methods like pickling in the video above. </p>
+		<h1 class= "myworkstitle"> ANIMATION. MOTION </h1>
+		<p id = "animsubtext"> - Click on the videos you would like to watch in full!</p>
 
-		 <iframe id="motionvid3" src="https://drive.google.com/file/d/1MJJL5-7arNazjq2_z178JiNShPTnDwL_/preview" width="640" height="360" allow="autoplay"></iframe>
-		 
-		 <p id = "motiondesc1"> We were required to develop a brand and create a vector logo animation as well as a one minute promotional video. The brand I created was for a company called 'Cabbage Bound' which is a community farm specialising in growing fresh produce specifically cabbages! </p>
-		 
-		  <iframe id="motionvid4" src="https://drive.google.com/file/d/1d7mwHnjquBHbKj4b9lFWCbNDM65Jx17Y/preview" width="640" height="360" allow="autoplay"></iframe>
-		 
-		  <p id = "motiondesc1"> This video required a combination of filmed footage and an overlay utilizing tools in AfterEffects like rotobrush to create an infographic styled video. I chose to do how to do digital frame by frame animation using a frame by frame overlay. </p>
-		 
-		 
-	</div>
-	
-	
-	<div data-aos="fade-up" id="web">
-		 
-		 <h1 class= "myworkstitle"> WEB </h1>
-		 
-		 <div id = "webwrapper1">
-			 
-			 <a href="pages/vivienne_assignment1/page.html " > <image src ="images/moaf.png" id = "MOAFthumbnail"></image> </a>
-			 <a class = "webtitle" href="pages/vivienne_assignment1/page.html " > MoAF Website </a>
-			  
-		  
-	  	<h2 id = "webtitledesc"> A website created for a fictional online muesum exhibit where I had picked the topic 'Beyond the Solar System'.</h2>
-			 </div>
-		  
-		 <div id="webwrapper2">
-			 
-		 
-			 
-		  <a href="pages/site/proto.html"><image src ="images/3Dweb.png" id = "webthumbnail"></image></a>
-		  <a class = "webtitle2" href="pages/site/proto.html"> Xmas Web Game </a>
-		  
-		  <h2 id="webtitle2desc"> This project required us to create a 3D holiday-themed space within a web page with a limited amount of faces. I chose to create a 3D interior for Christmas which gets the user to play a small game. Can you complete the objective?</h2>
-			 
-			 
-			 <p id="webintdesc"> Hover over the titles to see more info and Click on the images view the designs! </p>
-			  </div>
-		
-			 
-			 <div data-aos="fade-up" id ="uxui"> 
-			
-			
-					<h1 class= "myworkstitle" id= "uxuipagetitle"> UX &#38; UI </h1>
-				 		 
-				 <a href="https://www.figma.com/proto/WMw7WQeyi7zPGj8asecyRS/activation-webpage?node-id=0%3A1">
-					 <image src ="images/uxui/scultutt.png" id = "sculptureui"></image></a>
-				 
-				 
-				 <div id="bodlangtxtcont">
-					 
-					 <h2 class= "bodlangtitle"> Body Language Museum </h2>
-					 <p id = "bodlangdesc"> Another online museum design to display an interactive environment to better educate the public on what our body language could mean in regards to others as well as ourself.</p> 
-				 
-				 </div>
-		
-				 <a href="https://www.figma.com/proto/tFUfoQuM3sCkhWz40V9Qg9/webpage?node-id=0%3A1">
-					 <image src ="images/uxui/denim%20worldg.png" id = "denimui"></image></a>
-				
-				 <div id = "denimtxtcont"> 
-					 
-					 <h2 class= "denimfestitle"> Denim Festival Site </h2>
-					 <p id = "denimfesdesc"> For a made up festival of our choice where I decided to go with a denim themed festival to promote the upcycling of old denim. I created a webpage that would be compatible on phone as well as on a computer. </p>
-
-				 
-				 </div>
-				 
-		
-		
-			 </div>
-		
-		
-	</div>
-		 
-		 <div data-aos="fade-up" id ="threed">
-			 
-			 <h1 class= "myworkstitle"> 3D </h1>
-			 
-			 <div class = "3denvs"> 
-			 	<h2> 3D ENVIRONMENTS</h2>
-				 
-				 <video id="envvid" autoplay muted loop>
-					 <source src="images/3d/3denvisland_1.mp4" type="video/mp4">
-				 </video>
-				 <image src="images/3d/Promo%20Screenshot%205.png" id="img2"></image>
-				 <image src="images/3d/A1pt1.png" id="img5"></image>
-				 <video id="envvid2" autoplay muted loop>
-					 <source src="images/3d/3denv1_1.mp4" type="video/mp4">
-				 </video> <image src="images/3d/2.png" id="img3"></image>
-				 <image src="images/3d/5.png" id="img4"></image>
-			 
-			 
-			 </div>
-			 
-			 <div data-aos="fade-up" id="chardes">
-			 	<h2> 3D CHARACTER ANIMATION </h2>
-				 
-				 <video id="charanim" autoplay muted loop>
-					 <source src="images/3d/char.mp4" type="video/mp4">
-				 </video>
-				 <image src="images/3d/wawa.png" id="img7"></image>
-				  <image src="images/3d/hhehehehhee.png" id="img6"></image>
-				 <image src="images/3d/jhkj.png" id="img8"></image>
-				 
-				  
-			 </div>
+		<div class = "animprevcont"> 
+			<a href= "https://www.instagram.com/reel/CuxEebPtbaS/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==" target=”_blank”> 
+				<img id = "anim1" class= "animshowcase" src = "images/shortanim.gif">
+			</a>	
+		</div>
+		<div class = "animprevcont"> 
+			<a href = "https://drive.google.com/file/d/1asabZe1sf5irEI3iyhf5Vau3fsMH3q2C/view?usp=sharing" target=”_blank”>
+				<video id="anim2" class = "animshowcase" autoplay loop muted>
+					<source src="images/Comp 1_1.mp4" type="video/mp4">
+				</video> </div>
+			</a>
+		<div class = "animprevcont"> 
+			<a href = "https://drive.google.com/file/d/1LmLwmJAf1azW0uPZGCT-aRWoLm_YYNzR/view?usp=sharing" target=”_blank”> 
+				<video id="anim3" class = "animshowcase" autoplay loop muted>
+					<source src="images/LFFanim_preview.mp4" type="video/mp4">
+				</video>
+			</a>
 		
 		</div>
+		<div class = "animprevcont">
+			<a href = "https://drive.google.com/file/d/1RLLqr9CCDJO0MU0btdol6ZSVkjV-cBKR/view?usp=sharing" target=”_blank”>
+				<video id="anim4" class = "animshowcase" autoplay loop muted>
+					<source src="images/communityfarmprev.mp4" type="video/mp4">
+				</video>
+			</a>
+		</div>
+		<div class = "animprevcont"> 
+			<a href="https://drive.google.com/file/d/1UqerGKlLKPyslPUdDld04FfCH_t1Lp9O/view?usp=sharing" target=”_blank”>
+				<video id="anim5" class = "animshowcase" autoplay loop muted>
+					<source src="images/howtoprev.mp4" type="video/mp4">
+				</video>
+			</a>
+
+		</div>
+
+
+		<!-- <div id="animstoryboardsection">
+			<div>
+				<img class = "sbimage" src="images/Untitled_Artwork (45).png">
+				<img class = "sbimage" src="images/Untitled_Artwork 1 (2).png">
+
+			</div>
+
+			<div>
+				<img class = "sbimage" src="images/Storyboard_Template_2021.png">
+			</div>
+		</div> -->
+	</div>
+	
+	
+	<div data-aos="fade-up" id="web" class = "pagesection">
+		 
+		 <h1 class= "myworkstitle"> WEB. UI/UX </h1>
+		 <h2 id = "websubheading"  class = "subheading">  UI/UX</h2>
+		 <p id = "websubheading" > Works coming soon...</p>
+		 <h2 id = "websubheading"  class = "subheading"> WEBSITES</h2>
+		 <div id="weblinksection">
+
+			<div id = "weblinkbuttons"> 
+			  <button onclick="opensamplesite('samplesite1', 'pages/vivienne_assignment1/page.html')" href="pages/vivienne_assignment1/page.html" target=”_blank” id = "museumwebsbutton"> Online Museum </button> <a class = "websitelinksvg" href="pages/vivienne_assignment1/page.html"  target=”_blank”> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="40" viewBox="0 0 24 24"><path fill="#e2e2e2" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg> </a>
+			  <p>  &#8594 HTML + CSS, JavaScript, JQuery <br/>  &#8594 Horizontal Scrolling Site  </p>
+			  <button onclick="opensamplesite('samplesite2', 'pages/site/proto.html')" href="pages/site/proto.html" target=”_blank” id = "xmaswebbutton"> Holiday-Themed Web Game </button> <a class = "websitelinksvg" href="pages/site/proto.html" target=”_blank”> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="40" viewBox="0 0 24 24"><path fill="#e2e2e2" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></a>
+			  <p>  &#8594 HTML + CSS, JavaScript, JQuery <br/>  &#8594 3d Planes + Rotation </p>
+			  <button> Art Portfolio (Coming Soon)</button> 
+			  <p>  &#8594 React, TypeScript <br/>  &#8594 Responsive Design </p>
+			</div>
+			
+			
+			<div id = "samplesitecont">
+			  <!--<iframe id = "samplesite1" class ="samplesite" frameBorder="0" src="pages/vivienne_assignment1/page.html"> </iframe>
+			  <iframe id = "samplesite2" class ="samplesite" frameBorder="0" src="pages/site/proto.html"> </iframe> -->
+			</div>
+  
+		  </div>
+		 
+	</div>
+		 
+	<div class = "pagesection" data-aos="fade-up" id ="threed">
+			 
+		<h1 class= "myworkstitle"> 3D </h1>
+			 
+		 <div class = "3denvs"> 
+			<h2 class = "subheading"> ENVIRONMENTS + CHARACTER ANIMATION</h2>
+				
+				<video id="envvid" class ="prevvid3d" autoplay muted loop>
+					<source src="images/3d/3denvisland_1.mp4" type="video/mp4">
+				</video>
+
+				<video id="envvid2" class ="prevvid3d" autoplay muted loop>
+					<source src="images/3d/3denv1_1.mp4" type="video/mp4">
+				</video> 
+
+				<video id="charanim" class ="prevvid3d" autoplay muted loop>
+					<source src="images/3d/char.mp4" type="video/mp4">
+				</video>		 
+			 
+		</div>		
+	</div>
 		 	
-		 
-		<div  data-aos="fade-up" id ="design"> 
-			
-			
-			<h1 class= "myworkstitle"> COMM DES </h1>
-			
+		
+	<div  data-aos="fade-up" id ="design" class = "pagesection"> 
+		
+		
+		<h1 class= "myworkstitle"> COMM DES </h1>
+		
+		<div id ="albumdescont">
 			<audio id="audio" src="REMEMBERING%20YESTERDAYS.mp3"></audio>
-			 <image src="images/commdes/1-Sounding-Type-Template-Sleeve.png" id="disc" onclick = "playdisc()"></image>
-			<image src="images/commdes/maybealbum.png" id="albumcover"></image>
-			<image src="images/commdes/backofcover3.png" id="albumback"></image>
-			
-			<p id="discdesc"> Click the disc to play the track. </p>
-			<image src="images/commdes/3_spotify_cover.png" id="spotifycover"></image>
-			
-			<p id="albumdesc"> A unoffical album design based around the instrumental track 'Remembering Yesterdays' by Mocky. We were required to create a disc design, album cover and back as well as a spotify album cover.</p>
-			
-			
-			<image src="images/commdes/tripp.jpg" id="tripytch"></image>
-			<image src="images/commdes/IMG_6376.PNG" id="instaimg1"></image>
-			<image src="images/commdes/IMG_6377.PNG" id="instaimg2"></image>
-			<image src="images/commdes/IMG_6378.PNG" id="instaimg3"></image>
-			<image src="images/commdes/IMG_6379.PNG" id="instaimg4"></image>
-			<image src="images/commdes/heLP.jpg" id="shoeposter"></image>
-			
-		
+			<image src="images/commdes/1-Sounding-Type-Template-Sleeve.png" id="disc" onclick = "playdisc()"></image>
+
+			<image src="images/commdes/maybealbum.png" id="albumcover" class = "albumfit"></image>
+			<image src="images/commdes/backofcover3.png" id="albumback" class = "albumfit"></image>
 		</div>
+		
+		
+		<p id="albumdesc1" class="albumdesc">  - An album design based around the instrumental track 'Remembering Yesterdays' by Mocky.</p>
+		<p id="albumdesc2" class="albumdesc">  - Click the disc to play the track! </p>
+		
+		<div> 
+			<image src="images/commdes/tripp.jpg" id="tripytch" class ="visualidentity" ></image>
+			<image src="images/commdes/heLP.jpg" id="shoeposter" class ="visualidentity"></image>
+			<p id="albumdesc1" class="albumdesc"> - People + Climate Design Project focusing on developing a wearable with a focus on a chosen social issue.</p>
+		</div>
+
+		
+	
+	</div>
 	
 
 		 
-			<div data-aos="fade-up" id ="illust"> 
+	<div data-aos="fade-up" id ="illustsection" class = "pagesection"> 
 			
-				<h1 class= "myworkstitle"> ILLUSTRATIONS </h1>
-			 <p class= "illustdesc"> Aside from University projects, one of my hobbies is creating illustrations based off shows, games and people! <br>
+		<h1 class= "myworkstitle"> ILLUSTRATIONS </h1>
+		<p id= "illustdesc"> I've always enjoyed drawing as a hobby and have been branching out slowly to draw digitally for all sorts of projects!</p>
 			
-			<div class = "cont1">
+		<div class = "drawingsection">
+			<a href="https://www.yumpu.com/en/document/view/65536654/lots-wife-edition-2-2021" target=”_blank” > 
+				<div class ="zinecont"> 
+					<img src="images/illust/viviennelam.pixelart.anime.2.png" id = "lotswifecover" class="illust"> 
+				</div>
+			</a>
+			<a href = "https://drive.google.com/drive/u/3/folders/13IxkqHqr2XqkUUAH7fJuivTV7MjHlETJ" target=”_blank”>
+				<div class ="zinecont"> 
+					<img src="images/illust/image.png" class="illust">
+				</div>
+			</a>
+			<a href = "https://oursummersongzine.carrd.co/" target=”_blank”>
+				<div class ="zinecont"> 
+					<img src="images/illust/summerzine.jpg" class="illust">
+				</div>
+			</a>
 				
-				<!-- <image src="images/illust/glow.jpg" class="illust1" onmouseover="showtext()" onmouseout= "hidetext()" ></image> -->
-				
-				<image src="images/illust/chapend.png" class="illust2" onmouseover="showtext2()" onmouseout= "hidetext2()"></image> 
-				
-				<image src="images/illust/fish.png" class="illust3" onmouseover="showtext3()" onmouseout= "hidetext3()"></image>	
-				
-				<image src="images/illust/image.png" class="illust4" onmouseover="showtext4()" onmouseout= "hidetext4()"></image>
-				
-			
-			</div>
-			
-			<div class = "textcont1">
-			
-				<!--<p class = "illust1desc" id= "illust1desc"> Glow (original) - 28/10/2021</p> -->
-				<p class = "illust2desc" id= "illust2desc"> Phoenix (original) - 17/06/2022</p>
-				<p class = "illust3desc" id= "illust3desc"> Fischl (Genshin Impact FA) - 15/02/2022</p>
-				<p class = "illust4desc" id= "illust4desc"> Afternoons (for a Project Sekai zine) - 21/11/2022</p>
-			
-
-			</div>
-			
-			<div class = "cont2"> 
-					
-				<image src="images/illust/ponyo.jpg" class="illust6" onmouseover="showtext6()" onmouseout= "hidetext6()"></image>		
-				<image src="images/illust/XIAO.png" class="illust7" onmouseover="showtext7()" onmouseout= "hidetext7()"></image>
-				<image src="images/illust/slidingdoorm.png" class="illust8" onmouseover="showtext8()" onmouseout= "hidetext8()"></image>
-				
-				
-			</div>
-			
-			<div class = "textcont2">
-				<p class= "illust6desc" id= "illust6desc"> Ponyo (Studio Ghibli FA) - 04/03/2022</p>
-				<p class = "illust7desc" id= "illust7desc"> Xiao (Genshin Impact FA) A present for a friend - 13/11/2022</p>
-				<p class = "illust8desc" id= "illust8desc"> Sliding Door (original) - 01/07/2021</p>
-			
-			</div>
-				
-			<div class= "illustsection3">
-	
-				<image src="images/illust/meri1.png" class="illust9" ></image>
-				
-				<image src="images/illust/kayaya.png" class="illust10"></image>
-	
-			</div>
-				
-		    	
-			<div class = "textcont3">
-				<p class = "illust9desc" id= "illust9desc"> Melissa Kinrenka (FA) - 16/05/2023</p>
-				<p class = "illust10desc" id= "illust10desc"> Ayaka (Genshin Impact FA) - 07/02/2023 </p>
-
-			</div>
-				
-			<div class= "illustsection4">
-				
-				<image src="images/illust/koko.png" class="illust5"></image>
-				<image src="images/illust/rensyuuaaaa.png" class="illust11" ></image>
-				<image src="images/illust/bocchiiii.png" class="illust12"></image>
-				
-				<div class = "textcont4">
-				<p class = "illust11desc" id= "illust11desc"> Kokomi (Genshin Impact FA) - 25/02/2022</p>
-				<p  class = "illust12desc" id= "illust12desc"> Original Art - 28/06/2023 </p>
-				<p  class = "illust13desc" id= "illust13desc"> Hitori Gotoh (Bocchi the Rock FA) - 18/04/2023 </p>
-
-			</div>
-
-			</div>
-				
-			<div class= "illustsection5">
-				
-				<image src="images/illust/ina.png" class="illust13"></image>
-				<p id= "illust14desc"> Ninomae Ina'nis (FA) - 18/04/2022</p>
-				
-				<image src="images/illust/ai.png" class="illust14" ></image>
-				
-				<p id= "illust15desc"> Hoshino Ai (Oshi no Ko FA) - 01/05/2023 </p>
-
-			</div>
-			
-
-
 		</div>
-	
-	 <div class = "illustsection2">
-		
-			<div class = "cont3">
-				<image src="images/illust/og.jpg" class="illust15"></image>	
-				<p id= "illust18desc"> A Farewell (original) - 31/07/2022</p>
-			</div>
-		
-			<div class = "cont4">
-				<image src="images/illust/viviennelam.pixelart.anime.2.png" class="illust16"></image>
-				<p id= "magazinelink"><a href="https://www.yumpu.com/en/document/view/65536654/lots-wife-edition-2-2021" target=”_blank” > Click here to view the magazine!</a></p>
-				<p id= "illust16desc"> Digital Cover for Lot's Wife Magazine Edition 2 - 2021</p>
-				
-			</div>
-		
-			<div class = "cont5">
-				<image src="images/illust/woaemi1.png" class="illust17"></image>	
-				<p id= "illust17desc"> Rosemi Lovelock (FA) - 26/04/2022</p>
-			</div>
-	
+		<p id="albumdesc1" class = "illustcaption"> - Magazine and Fanart Zine work. </p>
+		<p id="albumdesc2" class = "illustcaption"> - Click on images to open Magazine/Zine! </p>
 
+		<div class = "cont2"> 
+			<img src="images/illust/illustrationsample.png" class="illustchar">
+			<img src="images/illust/Untitled_Artwork 1 (1) (1).png" class="illustchar">
+>
+		</div>
 
-	
-	
-	
+		<p class = "illustcaption"> - Original character design.</p>
+		
 
-	<div class = "footer">
-		<p id = "endingmsg"> Thank you so much for stopping by!<br> That's it for the time being but much more works are in progress ! :&#41; <br> If you have any questions feel free to ask or contact me via  
-			<a href="https://www.linkedin.com/in/vivienne-lam-29b191238/" target=”_blank” id="footerlinks">Linked In</a> 
-			or through <a id="footerlinks" href = "mailto:vvivienne.lam@gmail.com">email</a> !</p>
+		<h2 id= "otherillust" class = "subheading"> Other works.</h2>
+		<div class= "illustsection3">
+			<img src="images/illust/chapend.png" class="illustsmall" >
+			<img src="images/illust/fish.png" class="illustsmall" >	
+			<image src="images/illust/kayaya.png" class="illustsmall"></image>
+			<image src="images/illust/meri1.png" id= "melissaart" class="illustsmall" ></image>
+			<image src="images/illust/ai.png"  id = "oshinoko" class="illustsmall" ></image>
+		</div>
+
 
 	</div>
+
+
+	
+	
+	
+
+ 	<div id = "footer" class = "pagesection">
+		<div id= "footercontactcont"> 
+			<h2 id = "footerheading"> CONTACT </h2>
+			<a href="https://www.linkedin.com/in/vivienne-lam-29b191238/" target=”_blank” class="footerlinks">Linked In</a> 
+			<a class="footerlinks" href = "mailto:vvivienne.lam@gmail.com">Email</a>
+		</div>
+
+		<a id = "backtotopbutton" class="footerlinks" href="#intropage"> Back to the top ^ </a>
+
+	</div> 
 	
 				
 	
