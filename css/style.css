@@ -565,14 +565,21 @@ button {
 	width: 20vw;
     position: relative;
 	display: inline-block;
-	left: 20vw;
 	cursor: pointer;
 }
 
 #lotswifecover{
 	width: 21vw;
+}
+
+#zineimg1 {
     margin-bottom: 4vh;
     padding-right: 1vw;
+	left: 20vw;
+}
+
+#zineimg2, #zineimg3 {
+	left: 20vw;
 }
 
 .zinecont {
@@ -774,10 +781,11 @@ button {
 
 	.animprevcont {
 		display:block;
-		height: 40vh;
+		height: fit-content;
 		width: 100%;
 		background-color: #ffffff00;
 		overflow: hidden;
+		margin-top: -2vw;
 	}
 
 	#anim1{
@@ -787,10 +795,12 @@ button {
 	}
 
 	#anim2, #anim3{
-		left: 0px
+		left: 0px;
+		width: 100%;
 	}
 	#anim4, #anim5{
 		left: 0px;
+		width: 100%;
 	}
 
 	.myworkstitle {
