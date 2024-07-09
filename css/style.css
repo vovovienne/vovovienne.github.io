@@ -676,7 +676,7 @@ button {
 	right: 2vw;
 }
 
-@media (max-width: 680px) {
+@media only screen and (max-width: 680px) {
 	body {
 		margin: 0;
 		width: 100%;
@@ -830,7 +830,7 @@ button {
 
 	.illust{
 		width: 44vw;
-        left: 3vw;s
+        left: 3vw;
 	}
 
 	#lotswifecover{
