@@ -857,7 +857,7 @@ button {
 
 	.illust{
 		width: 44vw;
-        left: 3vw;
+		left: -16vw;
 	}
 	.illustcaption {
 		left: 12vw;
@@ -867,7 +867,7 @@ button {
 	#lotswifecover{
 		width: 52vw;
         margin-bottom: 2vh;
-        left: 22vw;
+		left: 0px;
 	}
 
 	.illustchar {
