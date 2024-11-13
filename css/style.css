@@ -70,6 +70,7 @@ button {
     z-index: 5;
 }
 
+
 .header {
 	margin: 0px 20px 0px;
 }
@@ -167,6 +168,11 @@ button {
 
 
 /*nav*/
+#hamburgermenu {
+	visibility: hidden;
+	z-index: 100;
+}
+
 .sidenav{
 	grid-column: 1;
 	position: fixed;
@@ -176,7 +182,11 @@ button {
 	left: 2vw;
 	top: 35%;
 	letter-spacing: 2px;
+	z-index: 100;
+}
 
+#nav{
+	display: block;
 }
 
 .sidenav, a:link, a:visited {
@@ -272,6 +282,11 @@ button {
 #edmex {
 	position: relative;
 	width: 13vw;
+}
+
+#edmex:hover, #uxuiex:hover, #mainimg:hover  {
+	opacity: 80%;
+	transition: all 0.2s ease;
 }
 
 /*abtme*/
@@ -722,11 +737,6 @@ button {
 		font-size: 12px;
 	}
 
-
-	#introheading{
-		visibility: hidden;
-	}
-
 	.header {
 		position: relative;
 		display: block;
@@ -736,6 +746,41 @@ button {
 		max-height: fit-content;
 		min-height: fit-content;
         overflow: hidden;
+	}
+	.introheadingformat {
+		position: relative;
+		width: 120px;
+	}
+	
+	#hamburgermenu{
+		visibility: visible;
+		position: fixed;
+		right: 0;
+		margin-top: -40px;
+		margin-right: 12px;
+		cursor: pointer;
+		color: #4c3d34;
+	}
+
+	#hamburgermenu:hover{
+		opacity: 80%;
+		transition: all 0.2s ease-in-out;
+	}
+	
+	.sidenav{
+		top: 46px;
+        left: 0;
+        right: 12px;
+		text-align: right;
+		transition: all 0.2s ease-in-out;
+	}
+
+	#nav{
+		display: none;
+	}
+
+	.visible {
+		visibility: visible;
 	}
 
 	.pagesection {
@@ -768,6 +813,24 @@ button {
 
 	}
 
+	#showcaseworks {
+		padding-left: 5vw;
+		padding-top: 1vw;
+	}
+
+	#mainimg {
+		width: 55vw;
+	}
+
+	#edmex {
+		width: 28.5vw
+	}
+
+	#uxuiex {
+		width: 84vw;
+		bottom: 0;
+	}
+	
 	#about {
 		width: 100%;
 	}
@@ -792,25 +855,29 @@ button {
 	#abttitle {
 		font-size: 30px;
 		left: 10vw;
+		position: absolute;
+		margin-top: -35px;
 	}
 
 	#aboutmedesc{
 		width: 212px;
 		transform: none;
-		left: 26vw;
-		position: relative;
+		left: 158px;
+		margin-top: 6px;
 	}
 
 	#aboutmecont {
-		padding-top: 4vh;
-		left: 0;
 		transform: none;
+		margin-top: 8vh;
+        margin-left: 6vw;
+		left: 0;
 	}
 
 	#socialcont{
-		margin-top: 15%;
-		padding-bottom: 10vw;
-		left: 45%;
+		margin-top: 42%;
+		padding-bottom: 3vw;
+        width: 120px;
+        left: 50%;
 	}
 
 	.prevvid3d {
@@ -880,13 +947,15 @@ button {
 	}
 
 	.visualidentity {
-		width: 63vw;
+		width: 95vw;
 		padding-top: 8vw;
 		left:0;
 	}
 
 	#shoeposter {
-		width: 31.5vw;
+		width: 54.5vw;
+        left: 20%;
+		top: -5vh;
 	}
 
 	#pncdesc{

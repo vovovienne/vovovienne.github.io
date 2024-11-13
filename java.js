@@ -50,3 +50,13 @@ function opensamplesite(iframeid, samplesitesrc) {
       divcont.appendChild(addsamplesite);
     }
   }
+
+
+  function openMenu() {
+    var navid = document.getElementById("nav");
+    if (navid.style.display === "block") {
+      navid.style.display = "none";
+    } else {
+      navid.style.display = "block";
+    }
+  }
